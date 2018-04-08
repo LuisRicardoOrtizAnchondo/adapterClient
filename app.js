@@ -40,6 +40,7 @@ app.use(function(err, req, res, next) {
 });
 console.log('App corriendo!');
 multicapa.printMsg();
+multicapa.getUsers();
 multicapa.postProduct({nombre: 'Papitas con costillas y donas', precio: 300});
 
 module.exports = app;
