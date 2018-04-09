@@ -42,11 +42,13 @@ console.log('App corriendo!');
 console.log(multicapa);
 //console.log(obj);
 multicapa.printMsg();
-multicapa.getUsers();
-multicapa.getProducts();
+//multicapa.getUsers();
+//multicapa.getProducts();
 let obj = new Object();
-obj = {'nombre': 'comida presentacion (costillas)', 'precio': 200};
-console.log(obj);
+let idArticulo = '000';
+let pasillo = 0;
+obj = {'idArticulo': idArticulo,'nombre': 'comida presentacion (costillas)', 'precio': 200, 'image': 'https://engorda.org/wp-content/uploads/2017/06/engordan-costillas.jpg', 'pasillo': pasillo};
+//console.log(obj);
 //multicapa.postProducts(obj);
 
 module.exports = app;
