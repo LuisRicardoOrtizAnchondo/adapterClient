@@ -39,8 +39,14 @@ app.use(function(err, req, res, next) {
   res.render('error');
 });
 console.log('App corriendo!');
+console.log(multicapa);
+//console.log(obj);
 multicapa.printMsg();
 multicapa.getUsers();
-multicapa.postProduct({nombre: 'Papitas con costillas y donas', precio: 300});
+multicapa.getProducts();
+let obj = new Object();
+obj = {'nombre': 'comida presentacion (costillas)', 'precio': 200};
+console.log(obj);
+//multicapa.postProducts(obj);
 
 module.exports = app;

@@ -3,3 +3,12 @@ extends layout
 block content
   h1= title
   p Welcome to #{title}
+  form(action='www.richibuenaondaortizmulticapa.bid:3000/nuevo_producto', method='get')
+  | Nombre: 
+  input(type='text', name='nombre')
+  br
+  |   Precio: 
+  input(type='text', name='precio')
+  br
+  input(type='submit', value='Submit')
+
